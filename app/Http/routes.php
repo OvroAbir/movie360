@@ -56,3 +56,13 @@ Route::post('/edit/upgradeuser', 'EditDatabaseController@upgradeUser');\
 
 Route::get('/directors', 'EditDatabaseController@getDirList');
 Route::get('/producers', 'EditDatabaseController@getProdList');
+
+Route::get('/searchsug/{str}', 'SearchMovieController@liveSearch');
+Route::get('/movies/search_by_genre/{genre_id}', 'SearchMovieController@searchByGenre');
+Route::post('/movies/search_by_catagory', 'SearchMovieController@searchMovieByCatagory');
+
+Route::get('/livesearch/', function(){
+	return "recvd";
+});
+
+
