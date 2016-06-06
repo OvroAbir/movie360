@@ -88,20 +88,34 @@
       </tr>
     </table>
 
+    
     <p>
-      <table cellspacing="5px" border="1px" width="100%">
-        @for($i=0;$i<$comment_count;$i++)
-          @if($i==0)
-            <p><h2>Comments</h2></p>
-          @endif
+      <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;border:none;}
+        .tg td{font-family:Arial, sans-serif;font-size:13px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;}
+        .tg .tg-m6px{font-weight:bold;font-size:16px;font-style:italic;color:#ffffc7}
+        .tg .tg-yw4l{vertical-align:top}
+        .tg .tg-l60n{font-family:"Comic Sans MS", cursive, sans-serif !important;;vertical-align:top}
+      </style>
+
+      @if(count($comment_ara)!=0)
+        <p><h2>Comments</h2></p>
+      @endif
+
+      @for($i=0;$i<$comment_count;$i++)
+        <table class="tg" cellspacing="5px" border="1px" width="80%">
           <tr>
-            <td><h3>{{$user_name_commentd_ara[$i]}}</h3><span>says</span></span></td>
-            <td></td>
-            <td>{{$comment_ara[$i]}}</td>
+            <td class="tg-yw4l" rowspan="2" width="60px"><img src="/images/user_icon.png" width="60" height="60"></th>
+            <td class="tg-m6px">{{$user_name_commentd_ara[$i]}}</th>
           </tr>
-        @endfor
-      </table>
+          <tr>
+            <td class="tg-l60n">{{$comment_ara[$i]}}<br></td>
+          </tr>
+        </table>
+      @endfor
     </p>
+
 
     @if(Auth::user())
       <form method="POST" action="{{url('/').'/movies/'.$movie_id.'/add_coment'}}">
