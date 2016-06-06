@@ -1,4 +1,4 @@
-<html>	
+		<html>	
     		<head><style type="text/css">
 			.tg  {border-collapse:collapse;border-spacing:0;border-color:#999;border:none;margin:0px auto;}
 			.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#999;color:#444;background-color:#F7FDFA;}
@@ -19,23 +19,23 @@
 					  </tr>
 					  <tr>
 					    <td class="tg-6k2t">Total number of movies</td>
-					    <td class="tg-6k2t">'.$num_of_movies.'</td>
+					    <td class="tg-6k2t">{{$data['num_of_movies']}}</td>
 					  </tr>
 					  <tr>
 					    <td class="tg-yw4l">Highest Rated Movie</td>
-					    <td class="tg-yw4l">'.$highest_rated_movie.'</td>
+					    <td class="tg-yw4l">{{$data['highest_rated_movie']}}</td>
 					  </tr>
 					  <tr>
 					    <td class="tg-6k2t">Highest Searched Movie</td>
-					    <td class="tg-6k2t">'.$highest_searched_movie.'</td>
+					    <td class="tg-6k2t">{{$data['highest_searched_movie']}}</td>
 					  </tr>
 					  <tr>
 					    <td class="tg-yw4l">Most Commented Movie</td>
-					    <td class="tg-yw4l">'.$movie_name_comment_max.'</td>
+					    <td class="tg-yw4l">{{$data['movie_name_comment_max']}}</td>
 					  </tr>
 					  <tr>
 					    <td class="tg-6k2t">Number of users</td>
-					    <td class="tg-6k2t">'.$num_of_users.'</td>
+					    <td class="tg-6k2t">{{$data['$num_of_users']}}</td>
 					  </tr>
 					</table>
 				</p>
