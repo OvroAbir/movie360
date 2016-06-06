@@ -34,6 +34,8 @@ class MoviePageController extends Controller
         else
             $rating = $rating_from_admin;
 
+        $rating = round($rating, 2);
+
         $budget = $movie->BUDGET;
         $runtime = $movie->RUNTIME;
 
