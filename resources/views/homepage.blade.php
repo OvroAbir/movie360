@@ -8,7 +8,7 @@
     </p>
     <div id="leftblockonePan">
       <h3><a href="/movies">Top <span>Movies</span></a></h3>
-      <h4><span>1.</span><a href="{{$data['movie_id_ara'][0]}}">{{$data['movie_name_ara'][0]}} </a></h4>
+      <h4><span>1.</span><a href="/movies/{{$data['movie_id_ara'][0]}}">{{$data['movie_name_ara'][0]}} </a></h4>
       <p>
       </br>
         &nbsp;&nbsp;&nbsp;<img src="/images/{{$data['movie_id_ara'][0]}}.jpg" alt="Can not find" style="width:120px;height:120px;"> 
@@ -22,7 +22,7 @@
       </p>
 
       <p class="border"><img src="/images/blank.gif" alt="" /></p>
-      <h4><span>1.</span><a href="{{$data['movie_id_ara'][1]}}">{{$data['movie_name_ara'][1]}} </a></h4>
+      <h4><span>2.</span><a href="/movies/{{$data['movie_id_ara'][1]}}">{{$data['movie_name_ara'][1]}} </a></h4>
       <p>
       </br>
         &nbsp;&nbsp;&nbsp;<img src="/images/{{$data['movie_id_ara'][1]}}.jpg" alt="Can not find" style="width:120px;height:120px;"> 
