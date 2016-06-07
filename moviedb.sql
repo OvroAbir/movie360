@@ -609,7 +609,7 @@ ALTER TABLE `actor`
 --
 ALTER TABLE `actor_list`
   ADD CONSTRAINT `actor_list_ibfk_1` FOREIGN KEY (`MOVIE_ID`) REFERENCES `movie` (`MOVIE_ID`) ON DELETE CASCADE,
-  ADD CONSTRAINT `actor_list_ibfk_2` FOREIGN KEY (`ACTOR_ID`) REFERENCES `actor` (`ACTOR_ID`) ON DELETE SET NULL;
+  ADD CONSTRAINT `actor_list_ibfk_2` FOREIGN KEY (`ACTOR_ID`) REFERENCES `actor` (`ACTOR_ID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `movie`
@@ -631,14 +631,14 @@ ALTER TABLE `movie_admin`
 --
 ALTER TABLE `movie_genre`
   ADD CONSTRAINT `movie_genre_ibfk_1` FOREIGN KEY (`MOVIE_ID`) REFERENCES `movie` (`MOVIE_ID`) ON DELETE CASCADE,
-  ADD CONSTRAINT `movie_genre_ibfk_2` FOREIGN KEY (`GENRE_ID`) REFERENCES `genre` (`GENRE_ID`) ON DELETE SET NULL;
+  ADD CONSTRAINT `movie_genre_ibfk_2` FOREIGN KEY (`GENRE_ID`) REFERENCES `genre` (`GENRE_ID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `movie_language`
 --
 ALTER TABLE `movie_language`
   ADD CONSTRAINT `movie_language_ibfk_1` FOREIGN KEY (`MOVIE_ID`) REFERENCES `movie` (`MOVIE_ID`) ON DELETE CASCADE,
-  ADD CONSTRAINT `movie_language_ibfk_2` FOREIGN KEY (`LANGUAGE_ID`) REFERENCES `language` (`LANGUAGE_ID`) ON DELETE SET NULL;
+  ADD CONSTRAINT `movie_language_ibfk_2` FOREIGN KEY (`LANGUAGE_ID`) REFERENCES `language` (`LANGUAGE_ID`) ON DELETE CASCADE;
 
 --
 -- Constraints for table `search_table`
