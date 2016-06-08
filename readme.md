@@ -1,3 +1,8 @@
+#movie360
+
+movie360 is a movie website. It uses Laravel 5.2 as framework and Mysql runs in xampp. You can run this by using "php artisan serve" command. 
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
